@@ -1,5 +1,5 @@
 [build]
-buildCommand = "npm install && npx playwright install chromium --with-deps"
+buildCommand = "npm install && PLAYWRIGHT_BROWSERS_PATH=0 npx playwright install chromium --with-deps"
 
 [deploy]
 startCommand = "node server.js"
